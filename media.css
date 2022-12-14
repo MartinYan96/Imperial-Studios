@@ -1,0 +1,211 @@
+@media screen and (max-width: 1440px) {
+  main .ourservis .ourheader .menu {
+    margin: 30px 8%;
+  }
+
+  .portfolio .menu {
+    padding: 0 10%;
+  }
+  .infoParent {
+    grid-template-columns: repeat(2, 45%);
+  }
+  .infoParent .textParent p {
+    line-height: 20.5px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main .navMenu ul {
+    display: none;
+  }
+  .infoParent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .infoParent .textParent {
+    padding-left: 3%;
+  }
+
+  .subscribe .subscribeMain > button {
+    width: 211px;
+  }
+  .ourTeam .menu {
+    padding: 0;
+    gap: 10px;
+  }
+  .ourTeam .menu .frame img {
+    width: 230px;
+    height: 230px;
+  }
+  main label {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .hero-header .title {
+    font-size: 20px;
+  }
+  header .hero-header h2 {
+    font-size: 15px;
+  }
+  main .navMenu {
+    padding: 1% 40%;
+  }
+  .infoParent .textParent {
+    padding: 0;
+  }
+  main .ourservis .ourheader .menu {
+    margin: 30px 3%;
+  }
+  main .ourservis .ourheader .menu .frame {
+    width: 330px;
+  }
+  .subscribe .subscribeMain > button {
+    width: 295px;
+  }
+  .testimonials .paragraph > p {
+    font-size: 14px;
+  }
+  .ourTeam .menu {
+    margin: 0 50px;
+  }
+  main label {
+    left: 95%;
+  }
+  #hamburgermenu:checked + label::before {
+    left: 34%;
+    width: 63.5%;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .hero-header .title {
+    padding: 0 10%;
+    text-align: center;
+  }
+  main .aboutAs .line,
+  main .ourservis .ourheader .line,
+  .portfolio .line,
+  .testimonials .line,
+  .ourTeam .line,
+  .contactUs .line {
+    margin: 4% auto;
+  }
+  .portfolio .name {
+    margin: 0;
+  }
+  main .navMenu {
+    padding: 1% 32%;
+  }
+  main .subscribe {
+    height: 300px;
+  }
+  .subscribe .subscribeMain {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .testimonials .menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+  }
+  .testimonials .position {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .testimonials .position:last-of-type {
+    flex-direction: column-reverse;
+  }
+  main .burgerMenu > .burgerUl {
+    width: 150px;
+    font-size: 13px;
+    gap: 20px;
+  }
+  main label {
+    left: 90%;
+  }
+  #hamburgermenu:checked + label::before {
+    left: 35%;
+    width: 60%;
+  }
+  footer {
+    padding-bottom: 15%;
+  }
+}
+@media screen and (max-width: 375px) {
+  main .navMenu {
+    padding: 0 30%;
+  }
+  main .subscribe {
+    height: 350px;
+  }
+  main .ourservis .ourheader .menu .frame .icon {
+    width: 50px;
+    height: 50px;
+  }
+  .subscribe .subscribeMain > button {
+    width: 200px;
+  }
+  .portfolio .text {
+    padding: 0 5%;
+  }
+  .portfolio .menu .frame {
+    width: 240px;
+    height: 240px;
+  }
+  .testimonials .paragraph1 > p,
+  .testimonials .paragraph2 > p {
+    font-size: 14px;
+  }
+  #hamburgermenu:checked + label::before {
+    left: 40%;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 320px) {
+  header .hero-header .logo img {
+    width: 300px;
+    height: 100%;
+  }
+  header .hero-header .title {
+    text-align: center;
+    font-size: 16px;
+    padding-left: 10%;
+  }
+  header .hero-header .button-parent button:first-of-type {
+    margin-left: 25%;
+  }
+  header .hero-header .button-parent button:last-of-type {
+    margin-left: 25%;
+  }
+  main .navMenu {
+    padding: 1% 25%;
+  }
+  main .ourservis .ourheader .menu .frame .text {
+    padding-left: 5%;
+  }
+  main .testimonials .menu {
+    padding-left: 10%;
+  }
+  .portfolio .menu .frame {
+    width: 230px;
+    height: 230px;
+  }
+  main .burgerMenu > .burgerUl {
+    width: 130px;
+  }
+  main label {
+    left: 88%;
+  }
+  #hamburgermenu:checked + label::before {
+    left: 40.2%;
+    width: 53.7%;
+  }
+  footer {
+    padding-bottom: 18%;
+  }
+  footer p {
+    line-height: 1.7;
+  }
+}

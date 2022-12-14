@@ -1,0 +1,699 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+@font-face {
+  font-family: font;
+  src: url(fonts/Raleway-Medium.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(img/hero-bg.jpg) no-repeat center top / cover;
+}
+header .hero-header {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+header .hero-header .logo img {
+  width: 348px;
+  height: 112px;
+}
+header .hero-header .title {
+  color: #fff;
+  font: 700 36px font, sans-serif;
+  margin: 30px 0 10px 0;
+  letter-spacing: 2px;
+}
+header .hero-header h2 {
+  color: #999;
+  font: 30px font, sans-serif;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+header .hero-header .button-parent button:first-of-type {
+  width: 160px;
+  height: 44px;
+  color: #fff;
+  font: 500 16px font, sans-serif;
+  background: #03c4eb;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 2px;
+}
+header .hero-header .button-parent button:first-of-type:hover {
+  background: transparent;
+  border: 3px solid #fff;
+}
+header .hero-header .button-parent button:last-of-type {
+  width: 160px;
+  height: 44px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font: 500 16px font, sans-serif;
+  transition: 0.3s;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 2px;
+}
+header .hero-header .button-parent button:last-of-type:hover {
+  background: #03c4eb;
+  border: none;
+}
+
+/* ------------------- about us--------------------- */
+
+main .navMenu .mainLogo img {
+  height: 50px;
+  width: 155.34px;
+}
+main .navMenu {
+  padding: 1% 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #000000d9;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+main .navMenu ul li {
+  padding: 10px 15px;
+  display: inline;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.4285714;
+  font-family: font;
+  color: #c5c5c5;
+}
+.home {
+  color: #03c4eb;
+}
+main .navMenu ul:hover {
+  cursor: pointer;
+}
+main .navMenu ul li:hover {
+  color: #03c4eb;
+  transition: 2s;
+}
+
+/* -------------about us--------------- */
+
+.aboutAs {
+  padding: 8.5%;
+  text-align: center;
+}
+.aboutAs h2 {
+  font: 700 32px font;
+}
+main .aboutAs .line {
+  width: 50px;
+  height: 3px;
+  background-color: #03c4eb;
+  margin: 1% auto;
+}
+main .aboutAs p {
+  text-align: center;
+  font: 14px font;
+  font-family: "Open Sans", sans-serif;
+  color: #666666;
+}
+.infoParent {
+  display: grid;
+  grid-template-columns: repeat(2, 35%);
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+.infoParent .imgParent img {
+  width: 100%;
+}
+.infoParent .textParent h3 {
+  font: 700 28px font, sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.infoParent .textParent p {
+  text-align: left;
+  line-height: 25.5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.infoParent .textParent p:last-of-type {
+  margin: 0;
+}
+
+/* ---------------- main ourservis------------------------ */
+
+main .ourservis {
+  width: 100%;
+  background: url(img/services-bg.jpg) no-repeat center / cover fixed;
+}
+main .ourservis .ourheader {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.9)
+  );
+  text-align: center;
+  padding: 80px 2%;
+}
+main .ourservis .ourheader .line {
+  width: 50px;
+  height: 3px;
+  background-color: #03c4eb;
+  margin: 2% auto;
+}
+main .ourservis .ourheader h3 {
+  font: 32px font;
+  text-align: center;
+  font-weight: 700;
+}
+main .ourservis .ourheader p {
+  font: 14px font;
+}
+main .ourservis .ourheader .menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px 10%;
+}
+main .ourservis .ourheader .menu .frame {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+main .ourservis .ourheader .menu .frame h3 {
+  text-align: start;
+  font: 18px font;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+main .ourservis .ourheader .menu .frame p {
+  text-align: start;
+  font: 14px font;
+  line-height: 1.7;
+}
+main .ourservis .ourheader .menu .frame .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #03c4eb;
+  color: #fff;
+  transition: 0.5s;
+  font-size: 24px;
+}
+main .ourservis .ourheader .menu .frame .icon:hover {
+  background: #fff;
+  color: #03c4eb;
+  border: 1px solid #03c4eb;
+}
+main .ourservis .ourheader .menu .frame .text {
+  width: 80%;
+}
+
+/* ---------------subscriber------------- */
+.subscribe {
+  background: url(img/subscribe-bg.jpg) no-repeat center / cover fixed;
+  width: 100%;
+  height: 260.8px;
+}
+.subscribe .subscribeMain {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  padding: 80px 12%;
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe .subscribeMain > button {
+  padding-left: 15px;
+}
+.subscribe .subscribeMain .divice .name {
+  font: 700 28px sans-serif;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.subscribe .subscribeMain .divice .text {
+  font: 14px "Open Sans", sans-serif;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.subscribe .subscribeMain button {
+  padding: 20px 90px;
+  border: 2px solid white;
+  border-radius: 2%;
+  background: transparent;
+  width: 190px;
+  height: 42.84px;
+  padding: 8px 20px;
+  margin: 10px;
+  text-transform: uppercase;
+  font: 500 16px font, sans-serif;
+  color: white;
+}
+.subscribe .subscribeMain button:hover {
+  background: #03c4eb;
+  border: none;
+  transition: 1s;
+  cursor: pointer;
+}
+/* -----------------PORTFOLIO---------------- */
+.portfolio {
+  padding: 80px 0;
+}
+.portfolio .name {
+  font: 700 32px font, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.portfolio .line {
+  width: 50px;
+  height: 3px;
+  background-color: #03c4eb;
+  margin: 2% auto;
+}
+.portfolio .text {
+  font: 14px font, sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.portfolio .menu {
+  padding: 0 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio .menu .frame {
+  width: 262.5px;
+  height: 260px;
+  position: relative;
+}
+.portfolio .menu .frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.portfolio .menu .frame .overly-image {
+  position: absolute;
+  inset: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  transition: 0.5s;
+}
+.portfolio .menu .frame:hover .overly-image {
+  inset: 0;
+}
+.portfolio .menu .frame .overly-image h3 {
+  font: bold 16px "Open Sans", sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, 50%);
+  opacity: 0;
+  visibility: hidden;
+}
+.portfolio .menu .frame .overly-image p {
+  font: 14px "Open Sans", sans-serif;
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  transform: translate(-50%, 50%);
+  opacity: 0;
+  visibility: hidden;
+}
+.portfolio .menu .frame:hover .overly-image h3 {
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, 50%);
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+  transition-delay: 0.5s;
+}
+.portfolio .menu .frame:hover .overly-image p {
+  left: 50%;
+  bottom: 40%;
+  transform: translate(-50%, 50%);
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+  transition-delay: 0.5s;
+}
+
+/* -------------TESTIMONIALS------------ */
+
+.testimonials {
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-bottom: 5%;
+}
+.testimonials .name {
+  font: 700 32px font, sans-serif;
+  text-align: center;
+  padding-top: 4%;
+}
+.testimonials .line {
+  width: 50px;
+  height: 3px;
+  background-color: #03c4eb;
+  margin: 1% auto;
+}
+.testimonials .text {
+  font: 14px font, sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #666666;
+}
+.testimonials .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials .position {
+  width: 80%;
+  background-color: #f6f6f6;
+  display: flex;
+}
+.testimonials .position .section {
+  width: 248px;
+  height: 320px;
+}
+.testimonials .position .section .photo1 {
+  width: 248px;
+  height: 248px;
+  border-radius: 50%;
+  background: url(img/client-1.jpg) no-repeat center/ cover;
+  border: 5px solid white;
+}
+.testimonials .position .section > h4 {
+  font: 700 18px "Raleway", sans-serif;
+  color: #03c4eb;
+  padding: 7% 0 0 25%;
+}
+.testimonials .position .section > p {
+  font: 14px "Open Sans", sans-serif;
+  color: #333333;
+  padding: 2% 0 0 35%;
+}
+.testimonials .paragraph {
+  width: 80%;
+  background-color: white;
+  margin: 4% 2% 6% 2%;
+}
+.testimonials .paragraph > p {
+  padding: 5%;
+  font-size: 16px;
+  font: 16px "Open Sans";
+  font-style: italic;
+  color: #666666;
+}
+
+.testimonials .position .section .photo2 {
+  width: 248px;
+  height: 248px;
+  border-radius: 50%;
+  background: url(img/client-2.jpg) no-repeat center/ cover;
+  border: 5px solid white;
+}
+
+/* -----------------OUR TEAM---------------- */
+
+.ourTeam {
+  background-color: #fff;
+  padding-bottom: 80px;
+}
+.ourTeam .name {
+  font: 700 32px font, sans-serif;
+  text-align: center;
+  padding-top: 4%;
+}
+.ourTeam .line {
+  width: 50px;
+  height: 3px;
+  background-color: #03c4eb;
+  margin: 1.5% auto;
+}
+.ourTeam .text {
+  font: 14px font, sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #666666;
+}
+.ourTeam .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 5%;
+  gap: 50px;
+}
+
+.ourTeam .menu .frame img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+.ourTeam .menu .frame h4 {
+  font: 700 18px font, sans-serif;
+  text-align: center;
+  color: rgb(104, 102, 102);
+  padding-top: 4%;
+}
+.ourTeam .menu .frame p {
+  font: 13px;
+  font-style: italic;
+  color: #555353;
+  text-align: center;
+  padding: 1%;
+}
+.ourTeam .menu .frame .icon {
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ourTeam .menu .frame .icon i {
+  padding-left: 7px;
+  display: inline-block;
+  font-size: 20px;
+  color: #b3b3b3;
+  text-align: center;
+  cursor: pointer;
+}
+.ourTeam .menu .frame .icon i:hover {
+  color: #03c4eb;
+  transition: 0.8s;
+}
+
+/* ---------------registration--------------- */
+
+.contactUs {
+  background-color: #f6f6f6;
+  padding: 3% 0;
+}
+.contactUs .name {
+  font: 700 32px font, sans-serif;
+  text-align: center;
+}
+.contactUs .line {
+  width: 50px;
+  height: 3px;
+  background-color: #03c4eb;
+  margin: 1.5% auto;
+}
+.contactUs .text {
+  font: 14px font, sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #666666;
+}
+.registration {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.registration .contacts {
+  width: 242px;
+  display: grid;
+  justify-items: start;
+}
+.registration .contacts div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.registration .contacts div i {
+  margin-right: 20px;
+  font-size: 32px;
+  color: #03c4eb;
+}
+.registration .contacts div p {
+  width: 80%;
+  font: 14px sans-serif;
+  line-height: 24px;
+  color: #505050;
+}
+.registration form {
+  width: 481px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 15px;
+}
+.registration form .formText {
+  font: 14px sans-serif;
+  border: 1px solid #ccc;
+  padding: 1% 2%;
+  width: 100%;
+  height: 35px;
+  resize: vertical;
+}
+.registration form .formText:focus {
+  outline: 1px solid #03c4eb;
+  transition: 0.2s;
+}
+.registration form .formText::placeholder {
+  color: #999;
+}
+.registration form .buttonMessage {
+  font: 14px font;
+  color: white;
+  width: 142px;
+  height: 40px;
+  border: none;
+  background: #03c4eb;
+}
+.registration form .buttonMessage:hover {
+  background: #3adafa;
+  cursor: pointer;
+}
+
+/* --------------footer-------------- */
+
+footer {
+  background-color: #111111;
+  padding: 2%;
+}
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: font, sans-serif;
+  color: white;
+  text-indent: 0.5em;
+}
+footer p > a {
+  color: #03c4eb;
+}
+
+/* ------------------home-up--------------- */
+
+main > .home-up {
+  position: fixed;
+  color: fff;
+  font-size: 16px;
+  right: 15px;
+  bottom: 15px;
+  background-color: rgb(0, 0, 0, 0.2);
+  padding: 10px 12px;
+  border-radius: 10%;
+  color: white;
+}
+main > .home-up:hover {
+  cursor: pointer;
+  background-color: #03c4eb;
+  transition: 0.5s;
+}
+
+/* -----------------mobil-menu-------------- */
+#hamburgermenu {
+  display: none;
+}
+main label {
+  display: none;
+  color: white;
+  position: fixed;
+  top: 10px;
+  left: 96%;
+  z-index: 20;
+  cursor: pointer;
+}
+main .burgerMenu {
+  background-color: rgba(0, 0, 0, 0.726);
+  width: 100%;
+  height: 100%;
+  z-index: 12;
+  position: fixed;
+  left: -100%;
+  top: 0;
+}
+main .burgerMenu > .burgerUl {
+  width: 260px;
+  height: 100%;
+  background-color: #000000d0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 30px;
+  font: 16px font;
+  color: #fff;
+  padding: 18px 0 0 15px;
+}
+main .burgerMenu > .burgerUl > a > li {
+  cursor: pointer;
+  color: #fff;
+}
+
+#hamburgermenu:checked + label + .burgerMenu {
+  left: 0;
+  transition: 0.5s;
+}
+label::before {
+  content: "☰";
+  font-size: 25px;
+  font-weight: 700;
+}
+#hamburgermenu:checked + label::before {
+  content: "✖";
+  font-size: 25px;
+  width: 72.5%;
+  height: 100%;
+  position: fixed;
+  top: 10px;
+  left: 25.5%;
+  text-align: end;
+}
