@@ -1,5 +1,5 @@
 @media screen and (max-width: 1440px) {
-  main .ourservis .ourheader .menu {
+  .wholePage .ourservis .ourheader .menu {
     margin: 30px 8%;
   }
 
@@ -16,7 +16,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  main .navMenu ul {
+  .wholePage .navMenu ul {
     display: none;
   }
   .infoParent {
@@ -38,7 +38,7 @@
     width: 230px;
     height: 230px;
   }
-  main label {
+  .wholePage label {
     display: block;
   }
 }
@@ -50,16 +50,16 @@
   header .hero-header h2 {
     font-size: 15px;
   }
-  main .navMenu {
+  .wholePage .navMenu {
     padding: 1% 40%;
   }
   .infoParent .textParent {
     padding: 0;
   }
-  main .ourservis .ourheader .menu {
+  .wholePage .ourservis .ourheader .menu {
     margin: 30px 3%;
   }
-  main .ourservis .ourheader .menu .frame {
+  .wholePage .ourservis .ourheader .menu .frame {
     width: 330px;
   }
   .subscribe .subscribeMain > button {
@@ -71,7 +71,7 @@
   .ourTeam .menu {
     margin: 0 50px;
   }
-  main label {
+  .wholePage label {
     left: 95%;
   }
   #hamburgermenu:checked + label::before {
@@ -84,8 +84,8 @@
     padding: 0 10%;
     text-align: center;
   }
-  main .aboutAs .line,
-  main .ourservis .ourheader .line,
+  .wholePage .aboutAs .line,
+  .wholePage .ourservis .ourheader .line,
   .portfolio .line,
   .testimonials .line,
   .ourTeam .line,
@@ -95,17 +95,17 @@
   .portfolio .name {
     margin: 0;
   }
-  main .navMenu {
+  .wholePage .navMenu {
     padding: 1% 32%;
   }
-  main .subscribe {
+  .wholePage .subscribe {
     height: 300px;
   }
   .subscribe .subscribeMain {
     display: flex;
     flex-wrap: wrap;
   }
-  main .testimonials .menu {
+  .wholePage .testimonials .menu {
     display: flex;
     flex-wrap: wrap;
     padding-left: 10%;
@@ -117,12 +117,12 @@
   .testimonials .position:last-of-type {
     flex-direction: column-reverse;
   }
-  main .burgerMenu > .burgerUl {
+  .wholePage .burgerMenu > .burgerUl {
     width: 150px;
     font-size: 13px;
     gap: 20px;
   }
-  main label {
+  .wholePage label {
     left: 90%;
   }
   #hamburgermenu:checked + label::before {
@@ -134,13 +134,13 @@
   }
 }
 @media screen and (max-width: 375px) {
-  main .navMenu {
+  .wholePage .navMenu {
     padding: 0 30%;
   }
-  main .subscribe {
+  .wholePage .subscribe {
     height: 350px;
   }
-  main .ourservis .ourheader .menu .frame .icon {
+  .wholePage .ourservis .ourheader .menu .frame .icon {
     width: 50px;
     height: 50px;
   }
@@ -173,29 +173,29 @@
     font-size: 16px;
     padding-left: 10%;
   }
-  header .hero-header .button-parent button:first-of-type {
+  header .hero-header .buttons button:first-of-type {
     margin-left: 25%;
   }
-  header .hero-header .button-parent button:last-of-type {
+  header .hero-header .buttons button:last-of-type {
     margin-left: 25%;
   }
-  main .navMenu {
+  .wholePage .navMenu {
     padding: 1% 25%;
   }
-  main .ourservis .ourheader .menu .frame .text {
+  .wholePage .ourservis .ourheader .menu .frame .text {
     padding-left: 5%;
   }
-  main .testimonials .menu {
+  .wholePage .testimonials .menu {
     padding-left: 10%;
   }
   .portfolio .menu .frame {
     width: 230px;
     height: 230px;
   }
-  main .burgerMenu > .burgerUl {
+  .wholePage .burgerMenu > .burgerUl {
     width: 130px;
   }
-  main label {
+  .wholePage label {
     left: 88%;
   }
   #hamburgermenu:checked + label::before {

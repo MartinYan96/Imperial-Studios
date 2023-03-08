@@ -4,14 +4,11 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 @font-face {
   font-family: font;
   src: url(fonts/Raleway-Medium.ttf);
-}
-
-html {
-  scroll-behavior: smooth;
 }
 header {
   width: 100%;
@@ -42,7 +39,7 @@ header .hero-header h2 {
   margin-bottom: 30px;
   letter-spacing: 2px;
 }
-header .hero-header .button-parent button:first-of-type {
+header .hero-header .buttons button:first-of-type {
   width: 160px;
   height: 44px;
   color: #fff;
@@ -54,11 +51,11 @@ header .hero-header .button-parent button:first-of-type {
   margin: 10px;
   border-radius: 2px;
 }
-header .hero-header .button-parent button:first-of-type:hover {
+header .hero-header .buttons button:first-of-type:hover {
   background: transparent;
   border: 3px solid #fff;
 }
-header .hero-header .button-parent button:last-of-type {
+header .hero-header .buttons button:last-of-type {
   width: 160px;
   height: 44px;
   background: transparent;
@@ -70,18 +67,18 @@ header .hero-header .button-parent button:last-of-type {
   margin: 10px;
   border-radius: 2px;
 }
-header .hero-header .button-parent button:last-of-type:hover {
+header .hero-header .buttons button:last-of-type:hover {
   background: #03c4eb;
   border: none;
 }
 
 /* ------------------- about us--------------------- */
 
-main .navMenu .mainLogo img {
+.wholePage .navMenu .mainLogo img {
   height: 50px;
   width: 155.34px;
 }
-main .navMenu {
+.wholePage .navMenu {
   padding: 1% 9%;
   display: flex;
   align-items: center;
@@ -93,7 +90,7 @@ main .navMenu {
   z-index: 1;
 }
 
-main .navMenu ul li {
+.wholePage .navMenu ul li {
   padding: 10px 15px;
   display: inline;
   color: #fff;
@@ -105,10 +102,10 @@ main .navMenu ul li {
 .home {
   color: #03c4eb;
 }
-main .navMenu ul:hover {
+.wholePage .navMenu ul:hover {
   cursor: pointer;
 }
-main .navMenu ul li:hover {
+.wholePage .navMenu ul li:hover {
   color: #03c4eb;
   transition: 2s;
 }
@@ -122,13 +119,13 @@ main .navMenu ul li:hover {
 .aboutAs h2 {
   font: 700 32px font;
 }
-main .aboutAs .line {
+.wholePage .aboutAs .line {
   width: 50px;
   height: 3px;
   background-color: #03c4eb;
   margin: 1% auto;
 }
-main .aboutAs p {
+.wholePage .aboutAs p {
   text-align: center;
   font: 14px font;
   font-family: "Open Sans", sans-serif;
@@ -161,13 +158,13 @@ main .aboutAs p {
   margin: 0;
 }
 
-/* ---------------- main ourservis------------------------ */
+/* ---------------- .wholePage ourservis------------------------ */
 
-main .ourservis {
+.wholePage .ourservis {
   width: 100%;
   background: url(img/services-bg.jpg) no-repeat center / cover fixed;
 }
-main .ourservis .ourheader {
+.wholePage .ourservis .ourheader {
   width: 100%;
   height: 100%;
   background: linear-gradient(
@@ -177,44 +174,45 @@ main .ourservis .ourheader {
   text-align: center;
   padding: 80px 2%;
 }
-main .ourservis .ourheader .line {
+.wholePage .ourservis .ourheader .line {
   width: 50px;
   height: 3px;
   background-color: #03c4eb;
   margin: 2% auto;
 }
-main .ourservis .ourheader h3 {
+.wholePage .ourservis .ourheader h3 {
   font: 32px font;
   text-align: center;
   font-weight: 700;
 }
-main .ourservis .ourheader p {
+.wholePage .ourservis .ourheader p {
   font: 14px font;
 }
-main .ourservis .ourheader .menu {
+.wholePage .ourservis .ourheader .menu {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
   margin: 30px 10%;
 }
-main .ourservis .ourheader .menu .frame {
+.wholePage .ourservis .ourheader .menu .frame {
   width: 350px;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
-main .ourservis .ourheader .menu .frame h3 {
+.wholePage .ourservis .ourheader .menu .frame h3 {
   text-align: start;
   font: 18px font;
   font-weight: 700;
   margin-bottom: 15px;
 }
-main .ourservis .ourheader .menu .frame p {
+.wholePage .ourservis .ourheader .menu .frame p {
   text-align: start;
   font: 14px font;
   line-height: 1.7;
 }
-main .ourservis .ourheader .menu .frame .icon {
+.wholePage .ourservis .ourheader .menu .frame .icon {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -225,12 +223,12 @@ main .ourservis .ourheader .menu .frame .icon {
   transition: 0.5s;
   font-size: 24px;
 }
-main .ourservis .ourheader .menu .frame .icon:hover {
+.wholePage .ourservis .ourheader .menu .frame .icon:hover {
   background: #fff;
   color: #03c4eb;
   border: 1px solid #03c4eb;
 }
-main .ourservis .ourheader .menu .frame .text {
+.wholePage .ourservis .ourheader .menu .frame .text {
   width: 80%;
 }
 
@@ -250,6 +248,7 @@ main .ourservis .ourheader .menu .frame .text {
 }
 .subscribe .subscribeMain > button {
   padding-left: 15px;
+  transition: .5s;
 }
 .subscribe .subscribeMain .divice .name {
   font: 700 28px sans-serif;
@@ -621,7 +620,7 @@ footer p > a {
 
 /* ------------------home-up--------------- */
 
-main > .home-up {
+.wholePage > .home-up {
   position: fixed;
   color: fff;
   font-size: 16px;
@@ -632,7 +631,7 @@ main > .home-up {
   border-radius: 10%;
   color: white;
 }
-main > .home-up:hover {
+.wholePage > .home-up:hover {
   cursor: pointer;
   background-color: #03c4eb;
   transition: 0.5s;
@@ -642,7 +641,7 @@ main > .home-up:hover {
 #hamburgermenu {
   display: none;
 }
-main label {
+.wholePage label {
   display: none;
   color: white;
   position: fixed;
@@ -651,7 +650,7 @@ main label {
   z-index: 20;
   cursor: pointer;
 }
-main .burgerMenu {
+.wholePage .burgerMenu {
   background-color: rgba(0, 0, 0, 0.726);
   width: 100%;
   height: 100%;
@@ -660,7 +659,7 @@ main .burgerMenu {
   left: -100%;
   top: 0;
 }
-main .burgerMenu > .burgerUl {
+.wholePage .burgerMenu > .burgerUl {
   width: 260px;
   height: 100%;
   background-color: #000000d0;
@@ -673,7 +672,7 @@ main .burgerMenu > .burgerUl {
   color: #fff;
   padding: 18px 0 0 15px;
 }
-main .burgerMenu > .burgerUl > a > li {
+.wholePage .burgerMenu > .burgerUl > a > li {
   cursor: pointer;
   color: #fff;
 }
