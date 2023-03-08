@@ -640,6 +640,7 @@ footer p > a {
 /* -----------------mobil-menu-------------- */
 #hamburgermenu {
   display: none;
+  
 }
 .wholePage label {
   display: none;
@@ -658,6 +659,7 @@ footer p > a {
   position: fixed;
   left: -100%;
   top: 0;
+  transition: 0.5s;
 }
 .wholePage .burgerMenu > .burgerUl {
   width: 260px;
@@ -679,7 +681,6 @@ footer p > a {
 
 #hamburgermenu:checked + label + .burgerMenu {
   left: 0;
-  transition: 0.5s;
 }
 label::before {
   content: "☰";
